@@ -81,7 +81,7 @@ function App() {
             <img src={image} alt='dog' width='300px' height="400px"/>
             <h2>{name}</h2>
             <h3>{sex}, {age} years old</h3>
-            <p>{showMore? description: description.substring(0, 50) + "..."} <button onClick={()=>showTextClick(pup)}>{showMore ? "Show less" : "Show More"}</button></p>
+            <p>{showMore? description: description.substring(0, 50) + "..."} <button className='btnShow' onClick={()=>showTextClick(pup)}>{showMore ? "Show less" : "Show More"}</button></p>
             <h3>Energy level: {energy}</h3>
             <h3>Located: {location}</h3>
             <button className='btn' onClick={() => remove(id)}>Not interested</button>
